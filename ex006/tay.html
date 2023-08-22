@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz da loirinha</title>
+</head>
+<body>
+    <h1>Qual é a idade da Taylor Swift?</h1>
+    <input type="number" name="txtidade" id="txtidade">
+    <input type="button" value="Verificar" onclick="calcular()"
+    <div id="resultado"></div>
+    <script>
+        var txtid = window.document.getElementById('txtidade')
+
+        function calcular() {
+            var idade = Number(txtid.value)
+            var resultado = window.document.getElementById('resultado')
+            resultado.innerHTML = `<p>Você disse <strong> ${idade} anos</strong></p>`
+            if (idade != 33){
+                resultado.innerHTML += `VOCÊ ERROU!`
+            }
+        }
+    </script>
+</body>
+</html>
