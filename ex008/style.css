@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(80deg, #00507F 20%, #567587);
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    color:#B2DAFF;
+    text-shadow: 2px 2px 8px #00365680;
+}
+
+main {
+    background-color: #B2DAFF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 8px #00365680;
+}
+
+div {
+    text-align: center;
+}
+
+footer {
+    color:#B2DAFF;
+    text-align: center;
+}
