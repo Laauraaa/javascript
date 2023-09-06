@@ -4,33 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Verificador de idade</title>
+    <title>Calculator</title>
 </head>
 <body>
     <header>
-        <h1>Verificar a idade</h1>
+        <h1>Simple calculator</h1>
     </header>
 
     <main>
-        <div><p>Ano de nascimento:
-            <input type="number" name="txtano" id="txtano" min="0">    
-        </p>
-        
-        <p>
-            Sexo:
-            <input type="radio" name="radsex" id="mas" checked>
-            <label for="mas">Masculino</label>
-            <input type="radio" name="radsex" id="fem">
-            <label for="fem">Feminino</label>
-            <p>
-               <input type="button" value="Verificar" onclick="verificar()">
-            </p>
-        </p> 
-        </div> 
-        
-        <div id="res">
-            <p>Preencha os dados corretamente para checar os resultados.</p>
+        <div id="data">
+            <p>Start <input type="number" name="str" id="txtst"></p>
+            <p>End <input type="number" name="end" id="txten"></p>
+            <p>Step <input type="number" name="step" id="txtsp"></p>
+            <p><input type="button" value="Calculate" onclick="calculate()"></p>
         </div>
+
+        <div id="result">
+            <p>...</p>
+        </div>
+
     </main>
 
     <footer>
